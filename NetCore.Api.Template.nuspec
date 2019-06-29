@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NetCore.Api.Template</id>
+    <version>1.0.0</version>
+    <title>A Net Core template with Swagger documented Rest Controller or Graphql API.</title>
+    <authors>Thorsten Alpers</authors>
+    <owners>Thorsten Alpers</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/thorstenalpers/dotnetcore-api-template</projectUrl>
+    <description>A WebApi template with Swagger documented Rest Controller. Or a Graphql Api.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © Thorsten Alpers. All rights Reserved</copyright>
+    <language>en-GB</language>
+    <tags>.NET Core WebApi Swagger Swashbuckle Graphql</tags>
+    <packageTypes>
+		<packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="Content\**\*.*" target="content" exclude="**\bin\**\*.*;**\obj\**\*.*;**\*.user" /> 
+  </files>
+</package>
