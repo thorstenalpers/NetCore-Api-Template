@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Thorsten Alpers",
+  "classifications": [ "Web/ASP.NET" ],
+  "identity": "NetCore.Api.Template",
+  "name": ".Net Core Api Template",
+  "shortName": "netcoreapi",
+  "sourceName": "NetCore.Api.Template",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "selectedApi": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "rest",
+          "description": "A Rest API project."
+        },
+        {
+          "choice": "graphql",
+          "description": "A Graphql API project."
+        },
+        {
+          "choice": "Both",
+          "description": "REST and Graphql API projects."
+        }
+      ],
+      "isRequired": "true",
+      "description": "Choose the kind of Web API project"
+    },
+	"RestEnabled": {
+      "type": "computed",
+      "value": "(selectedApi == \"REST\" || selectedApi == \"Both\")"
+    },
+	"GraphqlEnabled": {
+      "type": "computed",
+      "value": "(selectedApi == \"graphql\" || selectedApi == \"Both\")"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [      
+        {
+          "condition": "(!GraphqlEnabled)",
+          "exclude": [
+            "src/StarWars/**",
+			"src/Web/GraphqlApi/**"
+          ]
+        },
+		{
+          "condition": "(!RestEnabled)",
+          "exclude": [
+			"src/Web/RestApi/**"
+          ]
+        }
+      ]
+    }
+  ],
+}
