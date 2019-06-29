@@ -55,3 +55,10 @@ _NCrunch_*
 
 # VsCode folder and files
 .vscode/
+
+# Sample_Projects
+Sample_Projects/
+
+
+# Sample_Projects
+*.nupkg
