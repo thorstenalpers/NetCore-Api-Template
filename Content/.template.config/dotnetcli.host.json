@@ -1,8 +1,16 @@
 {
   "symbolInfo": {
     "selectedApi": {
-    "longName": "api-project",
-    "shortName": "api"
+		"longName": "api-project",
+		"shortName": "api"
+    },
+	"PortGraphql": {
+		"longName": "port-graphql",
+		"shortName": "pg"
+    },
+	"PortRest": {
+		"longName": "port-rest",
+		"shortName": "api"
     }
   }
 }

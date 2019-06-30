@@ -2,9 +2,9 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Thorsten Alpers",
   "classifications": [ "Web/ASP.NET" ],
-  "identity": "NetCore.Api.Template",
+  "identity": "NetNinja.Api.Template",
   "name": ".Net Core Api Template",
-  "shortName": "netcoreapi",
+  "shortName": "coreapi",
   "sourceName": "NetCore.Api.Template",
   "preferNameDirectory": true,
   "tags": {
@@ -39,6 +39,54 @@
 	"GraphqlEnabled": {
       "type": "computed",
       "value": "(selectedApi == \"graphql\" || selectedApi == \"Both\")"
+    },
+	// PortGraphql
+    "PortGraphql": {
+      "type": "parameter",
+      "datatype": "integer",
+      "description": "Port to use for HTTP endpoint in launchSettings.json. If not pass as paramter, a random generated port will set it."
+    },
+    "PortGraphqlGenerated": {
+      "type": "generated",
+      "generator": "port"
+    },
+    "PortGraphqlReplacer": {
+      "type": "generated",
+      "generator": "coalesce",
+      "parameters": {
+        "sourceVariableName": "PortGraphql",
+        "fallbackVariableName": "PortGraphqlGenerated"
+      },
+      "replaces": "13000"
+    },
+	// PortRest
+    "PortRest": {
+      "type": "parameter",
+      "datatype": "integer",
+      "description": "Port to use for HTTP endpoint in launchSettings.json. If not pass as paramter, a random generated port will set it."
+    },
+    "PortRestGenerated": {
+      "type": "generated",
+      "generator": "port"
+    },
+    "PortRestReplacer": {
+      "type": "generated",
+      "generator": "coalesce",
+      "parameters": {
+        "sourceVariableName": "PortRest",
+        "fallbackVariableName": "PortRestGenerated"
+      },
+      "replaces": "13000"
+    },
+	
+	// replaces the existing port of the rest project in launchSettings.json
+	"portRest": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "fallback": "14000"
+      }, 
+      "replaces": "14000"
     }
   },
   "sources": [
