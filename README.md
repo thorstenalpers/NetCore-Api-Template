@@ -1,5 +1,5 @@
 # .Net Core Api Template
-A .Net Core API template for REST or graphql projects.
+A .Net Core API template for REST and / or graphql projects.
 
 - [.Net Core Api Template](#Net-Core-Api-Template)
   - [Install and use this Template](#Install-and-use-this-Template)
@@ -21,7 +21,7 @@ A .Net Core API template for REST or graphql projects.
 * .Net Core 2.2
 
 
-### Installation
+### Installation from nuget.org
  
 1. Open the windows console
 2. Install the template
