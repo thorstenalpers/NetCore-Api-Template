@@ -25,17 +25,23 @@ A .Net Core API template for REST and / or graphql projects.
  
 1. Open the windows console
 2. Install the template
->  dotnet new -i NetNinja.Api.Template
+
+```bat
+dotnet new -i NetNinja.Api.Template
+```
 
 3. Create a new folder with the name of the new project
 
-> mkdir MyWebApiProject
-
-> cd MyWebApiProject
+```bat
+mkdir MyWebApiProject
+cd MyWebApiProject
+```
 
 4. Create a new project based on this template
 
-> dotnet new coreapi -api REST 
+```bat
+dotnet new coreapi -api REST 
+```
 
  ### Available Parameter
 
