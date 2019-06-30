@@ -3,8 +3,8 @@
 REM Nuget must be in path
 REM 7Zip folder must be in path
 
-set version=1.0.2
-set test_folder=Sample_Projects
+set version=1.0.0
+set test_folder=Test_Sample_Projects
 set installation_folder_REST=Project_REST
 set installation_folder_Graphql=Project_Graphql
 set installation_folder_Both=Project_Both
@@ -19,7 +19,7 @@ mkdir %test_folder%
 
 nuget pack
 
-copy %*.nupkg %test_folder%\
+copy *.nupkg %test_folder%\
 
 cd %test_folder%
 
@@ -43,7 +43,7 @@ cd ..
 
 mkdir %installation_folder_Both%
 cd  %installation_folder_Both%
-dotnet new ninjaapi -api both
+dotnet new coreapi -api both
 cd ..
 
 cd ..
