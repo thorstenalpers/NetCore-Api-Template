@@ -19,6 +19,6 @@
     </packageTypes>
   </metadata>
   <files>
-    <file src="Content\**\*.*" target="content" exclude="**\bin\**\*.*;**\obj\**\*.*;**\*.user" /> 
+    <file src="Content\**\*.*" target="content" exclude="**\bin\**\*.*;**\obj\**\*.*;**\*.user;**\.vs\**\*.*" /> 
   </files>
 </package>
