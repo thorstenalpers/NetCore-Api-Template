@@ -67,11 +67,11 @@ Longname      |Shortname     | Description
 * Howto remove lines of source files: https://github.com/dotnet/templating/wiki/Reference-for-comment-syntax
 * Great .Net Core template repository: https://github.com/Dotnet-Boxed/Templates
  
-### This template based on following samples
+### This template uses following samples
  
- This template is based on official samples
- * https://github.com/graphql-dotnet/examples
- * https://github.com/microsoft/aspnet-api-versioning
+ This template uses official samples
+ * https://github.com/graphql-dotnet/examples in sub folder /src/AspNetCore
+ * https://github.com/microsoft/aspnet-api-versioning in subfolder /samples/aspnetcore/SwaggerSample/
  
 
 ## Contributing
