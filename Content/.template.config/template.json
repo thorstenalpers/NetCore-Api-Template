@@ -44,7 +44,7 @@
     "PortGraphql": {
       "type": "parameter",
       "datatype": "integer",
-      "description": "Port to use for HTTP endpoint in launchSettings.json. If not pass as paramter, a random generated port will set it."
+      "description": "A Port for HTTP endpoint in launchSettings.json. Default is a random generated port."
     },
     "PortGraphqlGenerated": {
       "type": "generated",
@@ -63,7 +63,7 @@
     "PortRest": {
       "type": "parameter",
       "datatype": "integer",
-      "description": "Port to use for HTTP endpoint in launchSettings.json. If not pass as paramter, a random generated port will set it."
+      "description": "A Port for HTTP endpoint in launchSettings.json. Default is a random generated port."
     },
     "PortRestGenerated": {
       "type": "generated",

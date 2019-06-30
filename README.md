@@ -42,7 +42,8 @@ A .Net Core API template for REST or graphql projects.
 Longname      |Shortname     | Description  
  -------------| -------------|-------------
  --api-project| -api         | Choose the kind of WebAPI project 
-
+  --port-graphql | -pg         | **Optional**. A Port for HTTP endpoint in launchSettings.json. Default is a random generated port.
+   --port-rest | -pr         | **Optional**. A Port for HTTP endpoint in launchSettings.json. Default is a random generated port.
 
 ### Live Demo
 
@@ -74,7 +75,7 @@ Longname      |Shortname     | Description
  
 
 ## Contributing
-If you want to contribute to this project and make it better, your help is very welcome. Contributing is also a great way to learn more about social coding on Github, new technologies and and their ecosystems and how to make constructive, helpful bug reports, feature requests and the noblest of all contributions: a good, clean pull request.
+If you want to contribute to this project and make it better, your help is very welcome.
 
 >1. Fork this repository
 >2. Clone the repository

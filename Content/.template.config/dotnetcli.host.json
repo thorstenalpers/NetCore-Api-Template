@@ -10,7 +10,7 @@
     },
 	"PortRest": {
 		"longName": "port-rest",
-		"shortName": "api"
+		"shortName": "pr"
     }
   }
 }
