@@ -1,6 +1,6 @@
 using GraphQL.Validation;
 
-namespace StarWars
+namespace NetCore.Api.Template.StarWars
 {
     public class InputValidationRule : IValidationRule
     {

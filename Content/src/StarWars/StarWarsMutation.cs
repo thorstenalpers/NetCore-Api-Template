@@ -1,7 +1,7 @@
 using GraphQL.Types;
-using StarWars.Types;
+using NetCore.Api.Template.StarWars.Types;
 
-namespace StarWars
+namespace NetCore.Api.Template.StarWars
 {
     /// <example>
     /// This is an example JSON request for a mutation

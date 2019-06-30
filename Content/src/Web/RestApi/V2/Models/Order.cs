@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Examples.V2.Models
+﻿namespace NetCore.Api.Template.RestApi.V2.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;

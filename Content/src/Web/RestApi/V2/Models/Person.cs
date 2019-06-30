@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Examples.V2.Models
+﻿namespace NetCore.Api.Template.RestApi.V2.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;
@@ -19,7 +19,7 @@
         /// </summary>
         /// <value>The person's first name.</value>
         [Required]
-        [StringLength( 25 )]
+        [StringLength(25)]
         public string FirstName { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@
         /// </summary>
         /// <value>The person's last name.</value>
         [Required]
-        [StringLength( 25 )]
+        [StringLength(25)]
         public string LastName { get; set; }
 
         /// <summary>

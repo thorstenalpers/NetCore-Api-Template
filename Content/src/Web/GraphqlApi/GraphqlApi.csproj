@@ -2,8 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildThisFileName).xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\NetCore.Api.Template.GraphqlApi.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\All.ruleset</CodeAnalysisRuleSet>
+    <AssemblyName>NetCore.Api.Template.GraphqlApi</AssemblyName>
+    <RootNamespace>NetCore.Api.Template.GraphqlApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

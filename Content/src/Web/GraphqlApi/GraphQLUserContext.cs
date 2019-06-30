@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace Example
+namespace NetCore.Api.Template.GraphqlApi
 {
     public class GraphQLUserContext
     {

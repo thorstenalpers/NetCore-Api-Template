@@ -1,6 +1,6 @@
-﻿namespace Microsoft.Examples.V2.Controllers
+﻿namespace NetCore.Api.Template.RestApi.V2.Controllers
 {
-    using AspNetCore.Routing;
+    using Microsoft.AspNetCore.Routing;
     using Microsoft.AspNetCore.Mvc;
     using Models;
     using System.Collections.Generic;
@@ -9,8 +9,8 @@
     /// Represents a RESTful people service.
     /// </summary>
     [ApiController]
-    [ApiVersion( "2.0" )]
-    [Route( "api/v{version:apiVersion}/[controller]" )]
+    [ApiVersion("2.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class PeopleController : ControllerBase
     {
         /// <summary>
@@ -19,8 +19,8 @@
         /// <returns>All available people.</returns>
         /// <response code="200">The successfully retrieved people.</response>
         [HttpGet]
-        [Produces( "application/json" )]
-        [ProducesResponseType( typeof( IEnumerable<Person> ), 200 )]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(IEnumerable<Person>), 200)]
         public IActionResult Get()
         {
             var people = new[]
@@ -48,7 +48,7 @@
                 }
             };
 
-            return Ok( people );
+            return Ok(people);
         }
 
         /// <summary>
@@ -58,18 +58,18 @@
         /// <returns>The requested person.</returns>
         /// <response code="200">The person was successfully retrieved.</response>
         /// <response code="404">The person does not exist.</response>
-        [HttpGet( "{id:int}" )]
-        [Produces( "application/json" )]
-        [ProducesResponseType( typeof( Person ), 200 )]
-        [ProducesResponseType( 404 )]
-        public IActionResult Get( int id ) =>
-            Ok( new Person()
-                {
-                    Id = id,
-                    FirstName = "John",
-                    LastName = "Doe",
-                    Email = "john.doe@somewhere.com"
-                }
+        [HttpGet("{id:int}")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(Person), 200)]
+        [ProducesResponseType(404)]
+        public IActionResult Get(int id) =>
+            Ok(new Person()
+            {
+                Id = id,
+                FirstName = "John",
+                LastName = "Doe",
+                Email = "john.doe@somewhere.com"
+            }
             );
     }
 }

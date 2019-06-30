@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GraphQL;
-using StarWars.Types;
+using NetCore.Api.Template.StarWars.Types;
 
-namespace StarWars
+namespace NetCore.Api.Template.StarWars
 {
     public class StarWarsData
     {

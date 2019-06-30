@@ -1,7 +1,7 @@
 using GraphQL;
 using GraphQL.Types;
 
-namespace StarWars
+namespace NetCore.Api.Template.StarWars
 {
     public class StarWarsSchema : Schema
     {

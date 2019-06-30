@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using StarWars;
-using StarWars.Types;
+using NetCore.Api.Template.StarWars;
+using NetCore.Api.Template.StarWars.Types;
 
-namespace Example
+namespace NetCore.Api.Template.GraphqlApi
 {
     public class Startup
     {

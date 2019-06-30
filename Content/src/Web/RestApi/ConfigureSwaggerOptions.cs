@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Examples
+﻿namespace NetCore.Api.Template.RestApi
 {
     using Microsoft.AspNetCore.Mvc.ApiExplorer;
     using Microsoft.Extensions.DependencyInjection;
@@ -19,20 +19,20 @@
         /// Initializes a new instance of the <see cref="ConfigureSwaggerOptions"/> class.
         /// </summary>
         /// <param name="provider">The <see cref="IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
-        public ConfigureSwaggerOptions( IApiVersionDescriptionProvider provider ) => this.provider = provider;
+        public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => this.provider = provider;
 
         /// <inheritdoc />
-        public void Configure( SwaggerGenOptions options )
+        public void Configure(SwaggerGenOptions options)
         {
             // add a swagger document for each discovered API version
             // note: you might choose to skip or document deprecated API versions differently
-            foreach ( var description in provider.ApiVersionDescriptions )
+            foreach (var description in provider.ApiVersionDescriptions)
             {
-                options.SwaggerDoc( description.GroupName, CreateInfoForApiVersion( description ) );
+                options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
             }
         }
 
-        static Info CreateInfoForApiVersion( ApiVersionDescription description )
+        static Info CreateInfoForApiVersion(ApiVersionDescription description)
         {
             var info = new Info()
             {
@@ -44,7 +44,7 @@
                 License = new License() { Name = "MIT", Url = "https://opensource.org/licenses/MIT" }
             };
 
-            if ( description.IsDeprecated )
+            if (description.IsDeprecated)
             {
                 info.Description += " This API version has been deprecated.";
             }

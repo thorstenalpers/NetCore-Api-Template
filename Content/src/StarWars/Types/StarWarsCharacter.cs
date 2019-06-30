@@ -1,4 +1,4 @@
-namespace StarWars.Types
+namespace NetCore.Api.Template.StarWars.Types
 {
     public abstract class StarWarsCharacter
     {

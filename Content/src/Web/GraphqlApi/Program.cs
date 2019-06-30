@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Example
+namespace NetCore.Api.Template.GraphqlApi
 {
     public class Program
     {

@@ -2,8 +2,10 @@
 
  <PropertyGroup>
   <TargetFramework>netcoreapp2.2</TargetFramework>
-  <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildThisFileName).xml</DocumentationFile>
+  <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\NetCore.Api.Template.RestApi.xml</DocumentationFile>
   <CodeAnalysisRuleSet>..\..\..\All.ruleset</CodeAnalysisRuleSet>
+  <AssemblyName>NetCore.Api.Template.RestApi</AssemblyName>
+  <RootNamespace>NetCore.Api.Template.RestApi</RootNamespace>
  </PropertyGroup>
   
  <ItemGroup>

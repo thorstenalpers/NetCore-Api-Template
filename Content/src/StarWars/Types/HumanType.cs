@@ -1,6 +1,6 @@
 using GraphQL.Types;
 
-namespace StarWars.Types
+namespace NetCore.Api.Template.StarWars.Types
 {
     public class HumanType : ObjectGraphType<Human>
     {
