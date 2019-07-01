@@ -47,7 +47,7 @@ dotnet new coreapi -api REST
 
 Longname      |Shortname     | Description  
  -------------| -------------|-------------
- --api-project| -api         | Choose the kind of WebAPI project 
+ --api-project| -api         | Choose the kind of WebAPI project, Options: rest, graphql and both.
   --port-graphql | -pg         | **Optional**. A Port for HTTP endpoint in launchSettings.json. Default is a random generated port.
    --port-rest | -pr         | **Optional**. A Port for HTTP endpoint in launchSettings.json. Default is a random generated port.
 
