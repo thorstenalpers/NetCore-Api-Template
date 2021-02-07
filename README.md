@@ -1,18 +1,24 @@
 # .Net Core Api Template
+
+[![NetNinja.REST.Api.Template NuGet Package](https://img.shields.io/badge/nuget-1.1.1-blue)](https://www.nuget.org/packages/NetNinja.REST.Api.Template/) [![NuGet](https://img.shields.io/nuget/dt/NetNinja.REST.Api.Template.svg)](https://www.nuget.org/packages/NetNinja.REST.Api.Template/)
+
+<br/>
+
 A .Net Core API template for REST and / or graphql projects.
 
-- [.Net Core Api Template](#Net-Core-Api-Template)
-  - [Install and use this Template](#Install-and-use-this-Template)
-    - [Prequisition](#Prequisition)
-    - [Installation](#Installation)
-    - [Live Demo](#Live-Demo)
-      - [Swagger UI of the REST project](#Swagger-UI-of-the-REST-project)
-      - [Graphql UI of the graphql project](#Graphql-UI-of-the-graphql-project)
-  - [Develop a new .Net Core Template](#Develop-a-new-Net-Core-Template)
-    - [Howto create a nuget package](#Howto-create-a-nuget-package)
-    - [Get started with template generation](#Get-started-with-template-generation)
-    - [This template based on following samples](#This-template-based-on-following-samples)
-  - [Contributing](#Contributing)
+- [.Net Core Api Template](#net-core-api-template)
+  - [Install and use this Template](#install-and-use-this-template)
+    - [Prequisition](#prequisition)
+    - [Installation from nuget.org](#installation-from-nugetorg)
+    - [Available Parameter](#available-parameter)
+    - [Live Demo](#live-demo)
+      - [Swagger UI of the REST project](#swagger-ui-of-the-rest-project)
+      - [Graphql UI of the graphql project](#graphql-ui-of-the-graphql-project)
+  - [Develop a new .Net Core Template](#develop-a-new-net-core-template)
+    - [Howto create a nuget package](#howto-create-a-nuget-package)
+    - [Get started with template generation](#get-started-with-template-generation)
+    - [This template uses following samples](#this-template-uses-following-samples)
+  - [Contributing](#contributing)
 
 ## Install and use this Template 
 
