@@ -1,6 +1,6 @@
 # .Net Core Api Template
 
-[![NetNinja.REST.Api.Template NuGet Package](https://img.shields.io/badge/nuget-1.1.1-blue)](https://www.nuget.org/packages/NetNinja.REST.Api.Template/) [![NuGet](https://img.shields.io/nuget/dt/NetNinja.REST.Api.Template.svg)](https://www.nuget.org/packages/NetNinja.REST.Api.Template/)
+[![NetNinja.REST.Api.Template NuGet Package](https://img.shields.io/badge/nuget-1.0.3-blue)](https://www.nuget.org/packages/NetNinja.REST.Api.Template/) [![NuGet](https://img.shields.io/nuget/dt/NetNinja.REST.Api.Template.svg)](https://www.nuget.org/packages/NetNinja.REST.Api.Template/)
 
 <br/>
 
